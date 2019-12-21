@@ -4,7 +4,7 @@ const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src', 'main.js'),
+  entry: path.resolve(__dirname, 'src', 'client', 'main.js'),
   output: {
     filename: "main.js",
   },
@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src', 'public', 'index.html'),
+      template: path.resolve(__dirname, 'src', 'client', 'public', 'index.html'),
     }),
     new VueLoaderPlugin(),
     new webpack.HotModuleReplacementPlugin()
