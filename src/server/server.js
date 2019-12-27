@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
     extended: true,
 }));
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ROUTES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-//require("./routes")(app);
+require("./routes")(app);
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SERVER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 app.listen(3000, () => {

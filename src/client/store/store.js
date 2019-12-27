@@ -3,7 +3,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 //Custom Imports
-import home from './modules/home';
+import workoutConfig from './modules/workoutConfig';
 
 //Config
 Vue.use(Vuex);
@@ -11,6 +11,6 @@ Vue.use(Vuex);
 //Store
 export default new Vuex.Store({
     modules: {
-        home,
+        workoutConfig,
     }
 })
